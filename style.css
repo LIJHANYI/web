@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+nav{
+    background: #D0B084;
+    padding: 5px 20px ;
+    display:flex;
+    align-items: center;
+}
+
+nav a{
+    color: #fff;
+}
+
+nav a:hover{
+    color: #3d1e0b;
+}
+
+.logo {
+    flex:1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.logo a:hover{
+    color: #fff
+}
+.menu{
+    display:flex;
+    align-items:center;
+    list-style: none;
+}
+.menu li{
+    padding:15px 10px;
+    font-size: 16px;
+}
+
+.logo img{
+    width: 70px;
+    margin-right: 40px ;
+}
+/*wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
+
+.chart-heading {
+    font-family: "Rubik", sans-serif;
+    color: #023047;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .chart-container {
+    width: 400px;
+  }
+  
+  .programming-stats {
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    align-items: center; /*垂直置中*/
+    gap: 40px; /*圖表與文字間距*/
+    margin: 0 auto; /*水平置中*/
+    width: fit-content;
+    box-shadow: 0 4px 12px -2px #0000004d;
+    border-radius: 20px; /*圓角*/
+    padding: 10px 32px; 
+    color: #023047;
+    transition: all 400ms ease; /*響應*/
+  }
+  
+  .programming-stats:hover {  /*滑鼠懸停動畫*/
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+  }
+  
+  .programming-stats .details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .programming-stats .details ul li {
+    font-size: 16px;
+    margin: 12px 0;
+    text-transform: uppercase;
+  }
+  
+  .programming-stats .details .percentage {
+    font-weight: 700;
+    color: #749dcd;
+  }

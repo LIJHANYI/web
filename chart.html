@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>統計圖表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!--載入google字體-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://nfu.edu.tw/zh/">
+                <img src="logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">主頁</a></li>
+                <li><a href="chart.html">統計圖表</a></li>
+                <li><a href="A-Frame.html">A-Frame</a></li>
+                <li><a href="other.html">其他網站連結</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="chart-heading">虎尾鎮2022學歷概況統計</h1>
+    <div class="programming-stats">
+      <div class="chart-container">
+        <canvas class="my-chart"></canvas>
+      </div>
+      <div class="details">
+        <ul></ul>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>A-Frame</title>
+		<meta name="description" content="Aframe-Equalizer">
+    		<script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+		<script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script><!--漸層天空元件-->
+		<script src="https://unpkg.com/@editvr/aframe-dialog-popup-component@1.7.2/dist/aframe-dialog-popup-component.min.js"></script><!--對話框彈出元件-->
+
+  	</head>
+	<h3>41343113 四資工一甲 李展毅</h3>
+	<body>
+    		<a-scene>
+    			<a-entity camera look-controls wasd-controls="fly:true" position="0 1 5"></a-entity> <!-- 視角飛行 ture -->
+			<a-plane position="0 -0.5 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4" material="color: #a3e3ff" scale="0.2 0.2 1"></a-plane>
+      			<a-box position="" rotation="0 90 0" color="#003e72" scale="1 0.45 1.67"></a-box><!-- 底邊 -->
+			<a-box position="-1.00117 0.41323 0" rotation="55 90 0" color="#003e72" scale="1 0.45 1.23"></a-box><!-- 左下邊 -->
+      			<a-box position="1.00324 0.41285 0" rotation="125.00000000000001 90 0" color="#003e72" scale="1 0.45 1.23"></a-box><!-- 右下邊 -->
+      			<a-box position="-1.074 1.25314 0" rotation="115 90 0" color="#003e72" scale="1 0.45 1.23"></a-box><!-- 左上邊 -->
+      			<a-box position="1.07708 1.24563 0" rotation="65 90 0" color="#003e72" scale="1 0.45 1.23"></a-box><!-- 右上邊 -->
+			
+			<a-sky material="shader: gradient; topColor: 0 219 222; bottomColor: 252 0 255;"></a-sky><!--漸層天空-->
+
+
+			<a-cylinder color="#003e72" theta-start="0" theta-length="180" side="double" position="0.05352 1.07856 0" rotation="47 90 90" scale="0.34 1 0.44"></a-cylinder><!-- 沒有side double會導致內部觀測方塊變為透明-->
+			<a-cylinder color="#003e72" theta-start="0" theta-length="180" side="double" position="-0.07405 0.97795 0" rotation="227.5 90 90" scale="0.34 1 0.44"></a-cylinder>
+ 			<a-entity text="align: center; color: #000000; font: https://raw.githubusercontent.com/LIJHANYI/test2/refs/heads/main/1.json; negate: false; shader: msdf; value: 41343113四資工一甲李展毅" position="0.03419 2.23673 0.76192" scale="3.51557 3.50418 0.9118"></a-entity> 
+		</a-text>
+		</a-scene>
+  	</body>
+</html>
